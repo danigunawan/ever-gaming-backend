@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.create(username: 'suttonjr', password: "password")
+
+Playlist.create(name: 'GTA V', user_id: 1)
+
+Video.create(url: 'https://www.youtube.com/watch?v=RVwiixXViT0')
+
+VideoPlaylist.create(video_id: 1, playlist_id: 1)
