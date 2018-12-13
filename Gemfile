@@ -16,6 +16,9 @@ gem 'puma', '~> 3.11'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+#jwt -> converting some javascript object data (payload or password) and encrypts it into some string, and decode it into the payload
+gem "jwt", "~> 2.1"
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
