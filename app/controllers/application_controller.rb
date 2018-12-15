@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
   def secret_key
-
+      'h3llo'
   end
 
   #given a payload, returns a token
@@ -11,7 +11,7 @@ class ApplicationController < ActionController::API
   #given a token, return the orig payload
   def decode(token)
     JWT.decode(token, secret_key, true, {algorithm: 'HS256'})[0]
-  end 
+  end
 
 
 end
