@@ -10,6 +10,6 @@ User.create(username: 'suttonjr', password: "password")
 
 Playlist.create(name: 'GTA V', user_id: 1)
 
-Video.create(url: 'https://www.youtube.com/watch?v=RVwiixXViT0')
+Video.create(video: 'https://www.youtube.com/watch?v=RVwiixXViT0')
 
 VideoPlaylist.create(video_id: 1, playlist_id: 1)

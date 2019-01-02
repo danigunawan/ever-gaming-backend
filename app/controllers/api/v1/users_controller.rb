@@ -12,9 +12,10 @@ class Api::V1::UsersController < ApplicationController
 
   def profile
     #if the front end has a token, send back to @user
-    token = request.headers['Authentication'].split(' ')[1]
-    payload = decode(token)
-    current_user = User.find(payload["user"])
+    # token = request.headers['Authentication'].split(' ')[1]
+    # payload = decode(token)
+    # current_user = User.find(payload["user"])
+
     render json: { user: current_user }, status: :accepted
   end
 
